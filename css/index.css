@@ -4,6 +4,8 @@
 @import url(./theme.css);
 @import url(./base.css);
 
+/* 완성된 CSS */
+
 /* 공통 아이콘 (Font Awesome) */
 .far {
   margin-right: var(--spacing-xs);
