@@ -3,3 +3,30 @@
 @import url(./a11y.css);
 @import url(./theme.css);
 @import url(./base.css);
+
+/* 공통 스타일 */
+body {
+  background-color: var(--yellow);
+  font-size: 5vw;
+}
+
+@media(min-width: 320px) and (max-width: 768px) {
+  body {
+    background-color : var(--blue);
+  }
+}
+
+/* 중단점 769 이상 */
+@media (min-width: 769px) {
+  body {
+    background-color: var(--green);
+  }
+}
+
+.news__videoContainer {
+  /* 부모 section의 크기 70퍼가 figure */
+  width: 70%;
+}
+.book__cover {
+  width: 30%;
+}
