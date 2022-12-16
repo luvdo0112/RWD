@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.container {
+  background-color: silver;
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: auto;
+  padding: 24px;
+  gap: 24px;
+}
+[class*=group] {
+  height: 150px;
+}
+/* small device */
+@media(max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+/* medium device */
+@media(min-width: 768px) {
+  .container {
+    /* 2분의 1 */
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* large device */
+@media(min-width: 1280px) {
+  .container {
+    /* 4분의 1 */
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+  }
+}
+.group1 {
+  background-color: gold;
+}
+.group2 {
+  background: pink;
+}
+.group3 {
+  background: lightgreen;
+}
+.group4 {
+  background: skyblue;
+}
+.group5 {
+  background: salmon;
+}
+.group6 {
+  background: violet;
+}
+.group7 {
+  background: aquamarine;
+}
+.group8 {
+  background: lightseagreen;
+}
+.group9 {
+  background: MediumPurple;
+}
+.group10 {
+  background: MidnightBlue;
+}
+.group11 {
+  background: Olive;
+}
+.group12 {
+  background: SandyBrown;
+}
