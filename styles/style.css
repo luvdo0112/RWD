@@ -274,13 +274,18 @@ input[type="search"] {
   /* 데스크탑 메인 콘텐츠 */
   .appMain {
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: var(--container-width);
+    max-width: var(--container-width);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     margin-left: auto;
     margin-right: auto;
     border: 5px solid red;
+    grid-template-areas: "news news news news news news news news news news news news"
+                         "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
+                         "book book book book . board board board board board board board";
   }
   .book {
+    background-color: pink;
     grid-area: 3/7 1/14;
   }
   /* 공통 새소식 */
