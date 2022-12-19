@@ -578,6 +578,12 @@ input[type="search"] {
     gap: var(--spacing-base);
   }
 
+  /* 데스크탑 트위터 */
+  .twitter__userProfile {
+    width: 100px;
+    height: 100px;
+  }
+  
   .book {
     grid-area: book;
   }
