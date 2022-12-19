@@ -104,12 +104,11 @@ input[type="search"] {
   font-size: var(--text-md);
   font-weight: 700;
 }
-[class*="__enTitle"] {
+/* [class*="__enTitle"] {
   background: purple;
-}
+} */
 .sprite {
   color: var(--white);
-  background-color: blue ;
   height: 3.75rem;
   background: url(./../images/sprite_main.png) no-repeat;
   padding-left: 4rem;
@@ -130,30 +129,45 @@ input[type="search"] {
 .spriteTwitter {
   background-position: 0 -460px;
 }
+.accentBook {
+  color: var(--accent-book); 
+}
+.accentNews {
+  color: var(--accent-news); 
+}
+.accentBoard {
+  color: var(--accent-board); 
+}
+.accentFavorite {
+  color: var(--accent-favorite); 
+}
+.accentTwitter {
+  color: var(--accent-twitter); 
+}
 
 /* 공통 추천 서적 */
 .book {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   grid-area: book;
 }
 /* 공통 새소식 */
 .news {
-  background-color: yellow;
+  /* background-color: yellow; */
   grid-area: news;
 }
 /* 공통 게시판 */
 .board {
-  background-color: lightsalmon;
+  /* background-color: lightsalmon; */
   grid-area: board;
 }
 /* 공통 인기 사이트 */
 .favorite {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   grid-area: favorite;
 }
 /* 공통 트위터 */
 .twitter {
-  background-color: skyblue;
+  /* background-color: skyblue; */
   grid-area: twitter;
 }
 
@@ -311,6 +325,7 @@ input[type="search"] {
   
   /* 데스크탑 메인 콘텐츠 */
   .appMain {
+    background-color: var(--light-yellow);
     grid-template-rows: 1fr 1fr;
     max-width: var(--container-width);
     grid-template-columns: repeat(12, 1fr);
@@ -321,29 +336,6 @@ input[type="search"] {
     grid-template-areas: "news news news news news news news news news news news news"
                          "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
                          "book book book book . board board board board board board board";
-  }
-  .book {
-    background-color: pink;
-    grid-area: 3/7 1/14;
-  }
-  /* 공통 새소식 */
-  .news {
-    background-color: yellow;
-    grid-area: 1/4 1/1;
-  }
-  /* 공통 게시판 */
-  .board {
-    background-color: lightsalmon;
-    grid-area: ;
-  }
-  /* 공통 인기 사이트 */
-  .favorite {
-    background-color: aquamarine;
-    grid-area: ;
-  }
-  /* 공통 트위터 */
-  .twitter {
-    background-color: skyblue;
   }
 }
 
