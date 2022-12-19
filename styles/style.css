@@ -35,6 +35,7 @@
 
 /* 공통 검색 폼 */
 input[type="search"] {
+  /* 모바일 사파리에서 내가 넣은 서치폼 스타일이 적용되게 하는 방법 */
   -webkit-appearance: none;
   appearance: none;
 }
@@ -78,6 +79,13 @@ input[type="search"] {
   border: 1px solid currentColor;
 }
 
+/* 공통 메인 메뉴 */
+.menu__link {
+  display: block;
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
   /* 모바일 헤더 */
@@ -114,6 +122,8 @@ input[type="search"] {
   .button--burgerBarTop,
   .button--burgerBarMiddle,
   .button--burgerBarBottom {
+    /* span 객체가 눌릴때 버튼이 안눌릴 수도 있다 그래서 pointer-events 추가해주면 좋다 */
+    pointer-events: none;
     position: absolute;
     width: 100%;
     height: 20%;
@@ -143,6 +153,27 @@ input[type="search"] {
   .button--burger.is--active .button--burgerBarBottom {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
+  }
+  /* 모바일 메인 메뉴 */
+  .menu__list {
+    background: var(--accent-opacity-color);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    backdrop-filter: blur(4px);
+    padding: var(--spacing-lg);
+    transform: translateX(-150%);
+  }
+
+  .menu__item {
+    border-bottom: 1px solid var(--silver);
+  }
+
+  .menu.is--active .menu__list {
+    transform: none;
   }
 }
 
