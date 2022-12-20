@@ -146,19 +146,28 @@ input[type="search"] {
 
 /* 공통 추천 서적 */
 .book {
-  background-color: lightgreen;
   grid-area: book;
 }
 .book__cover {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  background-color: yellow;
   text-align: center;
 }
 .book__coverCaption {
   margin-top: var(--spacing-sm);
   line-height: 1.6;
+}
+.book__info {
+  text-align: center;
+  margin-top: var(--spacing-base);
+}
+.book__info * {
+  /* *: book info 안에 있는 거 전부 선택, 우선순위 낮음 */
+  display: inline;
+}
+.ratingStar {
+  display: block;
 }
 /* 공통 새소식 */
 .news {
