@@ -235,7 +235,6 @@ input[type="search"] {
 }
 /* 공통 트위터 */
 .twitter {
-  background-color: skyblue;
   grid-area: twitter;
 }
 .twitter__title {
@@ -245,7 +244,6 @@ input[type="search"] {
 
 }
 .twitter__userInfo {
-  background-color: aqua;
   display: inline-flex;
   gap: var(--spacing-xs);
 }
