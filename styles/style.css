@@ -342,6 +342,17 @@ input[type="search"] {
   .news {
     grid-area: 1/2 1/3;
   }
+
+  /* 모바일 인기 사이트 */
+  .favorite {
+    margin-top: var(--spacing-base);
+  }
+  .favorite__link::after {
+    content: attr(data-tooltip);
+    color: var(--accent-favorite);
+    font-size: var(--text-sm);
+    margin-left: var(--spacing-xs);
+  }
 }
 
 /* 데스크탑 디바이스 (Desktop Device) */
